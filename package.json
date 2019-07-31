@@ -1,0 +1,17 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kryz81/advanced-nodejs-schulung.git",
+  "author": "Kryz <kryz@webentwickler.io>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/**/*.js"
+  },
+  "devDependencies": {
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-node": "9.1.0"
+  }
+}
