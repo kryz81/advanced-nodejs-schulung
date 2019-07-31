@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "airbnb-base", "plugin:node/recommended"],
+  "extends": ["eslint:recommended", "plugin:node/recommended", "airbnb-base", "prettier"],
   "env": {
     "node": true,
     "es6": true,
