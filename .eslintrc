@@ -6,6 +6,8 @@
     "jest": true
   },
   "globals": {},
-  "rules": {},
+  "rules": {
+    "import/no-dynamic-require": [0]
+  },
   "plugins": []
 }
