@@ -1,5 +1,5 @@
 {
-  "extends": ["eslint:recommended", "plugin:node/recommended", "airbnb-base", "prettier"],
+  "extends": ["eslint:recommended", "plugin:node/recommended",  "plugin:prettier/recommended", "prettier", "airbnb-base"],
   "env": {
     "node": true,
     "es6": true,
@@ -7,7 +7,7 @@
   },
   "globals": {},
   "rules": {
-    "import/no-dynamic-require": [0]
+    "prettier/prettier": "error"
   },
   "plugins": []
 }

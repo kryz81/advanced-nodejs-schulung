@@ -6,13 +6,17 @@
   "author": "Kryz <kryz@webentwickler.io>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "prettier": "prettier -l src/**/*.{js,json}",
+    "fix": "prettier --write src/**/*.{js,json}"
   },
   "devDependencies": {
     "eslint": "6.1.0",
     "eslint-config-airbnb-base": "13.2.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-node": "9.1.0"
+    "eslint-plugin-node": "9.1.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "prettier": "1.18.2"
   }
 }
