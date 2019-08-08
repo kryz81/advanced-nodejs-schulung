@@ -1,22 +1,31 @@
 {
   "name": "src",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "https://github.com/kryz81/advanced-nodejs-schulung.git",
   "author": "Kryz <kryz@webentwickler.io>",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src/**/*.js",
     "prettier": "prettier -l src/**/*.{js,json}",
-    "fix": "prettier --write src/**/*.{js,json}"
+    "fix": "prettier --write src/**/*.{js,json}",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "debug": "yarn dev --inspect",
+    "build": "babel src -d build",
+    "prod": "node build"
   },
   "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/node": "7.5.5",
+    "@babel/preset-env": "7.5.5",
     "eslint": "6.1.0",
     "eslint-config-airbnb-base": "13.2.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-node": "9.1.0",
     "eslint-plugin-prettier": "3.1.0",
+    "nodemon": "1.19.1",
     "prettier": "1.18.2"
   }
 }
