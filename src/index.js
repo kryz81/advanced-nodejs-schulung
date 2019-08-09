@@ -1,7 +1,9 @@
 const { createServer } = require('http');
 
+const buildResponse = require('./services/buildResponse');
+
 const server = createServer((req, res) => {
-  res.end('ok\n');
+  res.end(`${buildResponse(req.url)}\n`);
 });
 
 const port = process.env.APP_PORT || 3000;

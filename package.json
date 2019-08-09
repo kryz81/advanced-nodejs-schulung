@@ -6,7 +6,7 @@
   "author": "Kryz <kryz@webentwickler.io>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint src",
     "prettier": "prettier -l src/**/*.{js,json}",
     "fix": "prettier --write src/**/*.{js,json}",
     "dev": "nodemon --exec babel-node src/index.js",
@@ -25,8 +25,11 @@
     "eslint-config-airbnb-base": "13.2.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.15.0",
     "eslint-plugin-node": "9.1.0",
     "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-security": "1.4.0",
+    "jest": "24.8.0",
     "nodemon": "1.19.1",
     "prettier": "1.18.2"
   }

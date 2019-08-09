@@ -1,13 +1,27 @@
 {
-  "extends": ["eslint:recommended", "plugin:node/recommended",  "plugin:prettier/recommended", "prettier", "airbnb-base"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "airbnb-base",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended",
+    "plugin:security/recommended"
+  ],
   "env": {
     "node": true,
     "es6": true,
-    "jest": true
+    "jest": true,
+    "jest/globals": true
   },
   "globals": {},
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import/no-dynamic-require": 0
   },
-  "plugins": []
+  "plugins": [
+    "prettier",
+    "jest",
+    "security",
+    "node"
+  ]
 }
