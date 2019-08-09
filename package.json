@@ -10,9 +10,11 @@
     "prettier": "prettier -l src/**/*.{js,json}",
     "fix": "prettier --write src/**/*.{js,json}",
     "dev": "nodemon --exec babel-node src/index.js",
-    "debug": "yarn dev --inspect",
+    "debug": "yarn dev --inspect=0.0.0.0:9229",
     "build": "babel src -d build",
-    "prod": "node build"
+    "prod": "node build",
+    "test": "jest --watch",
+    "test-once": "jest --coverage"
   },
   "devDependencies": {
     "@babel/cli": "7.5.5",

@@ -9,6 +9,6 @@
   ],
   "env": {
     "NODE_ENV": "development",
-    "APP_PORT": 3030
+    "APP_PORT": 3000
   }
 }

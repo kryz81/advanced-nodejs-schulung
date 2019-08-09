@@ -1,7 +1,7 @@
 const { createServer } = require('http');
 
 const server = createServer((req, res) => {
-  res.send('ok');
+  res.end('ok\n');
 });
 
 const port = process.env.APP_PORT || 3000;
