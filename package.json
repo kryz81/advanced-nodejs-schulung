@@ -1,10 +1,14 @@
 {
-  "name": "src",
+  "name": "adnosc",
+  "description": "Adesso Advanced Node.js Schulung Resources",
   "version": "1.0.0",
-  "main": "src/index.js",
   "repository": "https://github.com/kryz81/advanced-nodejs-schulung.git",
-  "author": "Kryz <kryz@webentwickler.io>",
+  "author": "Kryz <k@kryz.dev>",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "lint": "eslint src",
     "prettier": "prettier -l src/**/*.{js,json}",
@@ -15,7 +19,8 @@
     "prod": "node build",
     "test": "jest --watch",
     "test-once": "jest",
-    "coverage": "jest --collectCoverageFrom=src/**/*.js --coverage src"
+    "coverage": "jest --collectCoverageFrom=src/**/*.js --coverage src",
+    "test-all": "lerna run test-once"
   },
   "devDependencies": {
     "@babel/cli": "7.5.5",
@@ -31,7 +36,9 @@
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-security": "1.4.0",
     "jest": "24.8.0",
+    "lerna": "3.16.4",
     "nodemon": "1.19.1",
-    "prettier": "1.18.2"
+    "prettier": "1.18.2",
+    "supertest": "4.0.2"
   }
 }
