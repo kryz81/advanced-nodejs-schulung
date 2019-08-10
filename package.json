@@ -14,7 +14,8 @@
     "build": "babel src -d build",
     "prod": "node build",
     "test": "jest --watch",
-    "test-once": "jest --coverage"
+    "test-once": "jest",
+    "coverage": "jest --collectCoverageFrom=src/**/*.js --coverage src"
   },
   "devDependencies": {
     "@babel/cli": "7.5.5",
