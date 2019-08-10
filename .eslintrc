@@ -16,7 +16,8 @@
   "globals": {},
   "rules": {
     "prettier/prettier": "error",
-    "import/no-dynamic-require": 0
+    "import/no-dynamic-require": 0,
+    "node/no-unpublished-require": 0
   },
   "plugins": [
     "prettier",
