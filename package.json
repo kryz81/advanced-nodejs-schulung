@@ -21,7 +21,9 @@
     "test-once": "jest",
     "coverage": "jest --collectCoverageFrom=src/**/*.js --coverage src",
     "test-all": "lerna run test-once",
-    "doc": "documentation build src/** -f html -o docs"
+    "doc": "documentation build src/** -f html -o docs",
+    "audit": "yarn audit",
+    "check-packages": "yarn outdated"
   },
   "devDependencies": {
     "@babel/cli": "7.5.5",
