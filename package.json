@@ -20,13 +20,15 @@
     "test": "jest --watch",
     "test-once": "jest",
     "coverage": "jest --collectCoverageFrom=src/**/*.js --coverage src",
-    "test-all": "lerna run test-once"
+    "test-all": "lerna run test-once",
+    "doc": "documentation build src/** -f html -o docs"
   },
   "devDependencies": {
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
     "@babel/node": "7.5.5",
     "@babel/preset-env": "7.5.5",
+    "documentation": "12.1.1",
     "eslint": "6.1.0",
     "eslint-config-airbnb-base": "13.2.0",
     "eslint-config-prettier": "6.0.0",
