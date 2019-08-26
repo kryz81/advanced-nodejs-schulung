@@ -30,7 +30,6 @@ module.exports = employee => {
   getSkills(employee, (err, result) => {
     if (err) {
       throw err;
-      return;
     }
 
     // send skills to each listener

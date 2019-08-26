@@ -1,5 +1,6 @@
 const { createServer } = require('http');
-const { connect, getUser } = require(__dirname + '/db');
+
+const { connect, getUser } = require(`${__dirname}/db`);
 // const { connect, getUser } = require(__dirname + '/pool');
 
 connect(

@@ -21,7 +21,7 @@ exports.getUser = (id, cb) => {
   setImmediate(() => {
     isConnected();
     console.log(`Reading from ${connectionString}`);
-    const user = users.find(user => user.id === id);
-    cb(null, user);
+    const foundUser = users.find(user => user.id === id);
+    cb(null, foundUser);
   });
 };

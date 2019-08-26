@@ -4,8 +4,7 @@
     "plugin:node/recommended",
     "airbnb-base",
     "plugin:jest/recommended",
-    "plugin:prettier/recommended",
-    "plugin:security/recommended"
+    "plugin:prettier/recommended"
   ],
   "env": {
     "node": true,
@@ -17,12 +16,13 @@
   "rules": {
     "prettier/prettier": "error",
     "import/no-dynamic-require": 0,
-    "node/no-unpublished-require": 0
+    "node/no-unpublished-require": 0,
+    "no-console": "off",
+    "consistent-return": "off"
   },
   "plugins": [
     "prettier",
     "jest",
-    "security",
     "node"
   ]
 }
