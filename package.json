@@ -9,6 +9,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "scripts": {
     "lint": "eslint src",
     "prettier": "prettier -l src/**/*.{js,json}",
@@ -46,6 +49,12 @@
     "supertest": "4.0.2"
   },
   "dependencies": {
-    "dotenv": "8.0.0"
+    "body-parser": "1.19.0",
+    "dotenv": "8.0.0",
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1",
+    "passport": "0.4.0",
+    "passport-json": "1.2.0",
+    "passport-jwt": "4.0.0"
   }
 }
