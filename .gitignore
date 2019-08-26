@@ -1,6 +1,6 @@
 node_modules
 build
-yarn-error.log
+*.log
 coverage
 docs
 *dummy*
