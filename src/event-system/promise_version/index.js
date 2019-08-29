@@ -6,12 +6,12 @@ const skill = process.argv[2];
 
 const skillsFinder = new SkillsFinder(skill, employees);
 
-skillsFinder.find((err, result) => {
-  if (err) {
+(async () => {
+  try {
+    const result = await skillsFinder.find();
+    // eslint-disable-next-line no-console
+    console.log(`Employees with ${skill}: `, result);
+  } catch (err) {
     console.log(`Cannot check skill: ${err.message}`);
-    return;
   }
-
-  // eslint-disable-next-line no-console
-  console.log(`Employees with ${skill}: `, result);
-});
+})();

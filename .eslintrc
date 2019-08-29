@@ -18,7 +18,8 @@
     "import/no-dynamic-require": 0,
     "node/no-unpublished-require": 0,
     "no-console": "off",
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "array-callback-return": "off"
   },
   "plugins": [
     "prettier",

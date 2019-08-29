@@ -4,7 +4,7 @@ const employees = ['leonie', 'lisa', 'tim'];
 // const employees = ['leonie', 'lisa', 'tim', 'non-existing'];
 let employeesChecked = 0;
 const employeesWithSkill = [];
-const skill = 'react';
+const skill = process.argv[2];
 
 const skillsFinder = new SkillsFinder(skill, employees);
 
