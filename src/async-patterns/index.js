@@ -1,7 +1,9 @@
 const getSkills = require(__dirname + '/getSkills');
 const getUser = require(__dirname + '/getUser');
 
-getUser('Tim', (err, result) => {
+const user = process.argv[2];
+
+getUser(user, (err, result) => {
   if (err) {
     console.log(err.message);
     return;

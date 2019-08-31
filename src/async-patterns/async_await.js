@@ -1,5 +1,5 @@
-const getUser = require(__dirname + '/getUser');
-const getSkills = require(__dirname + '/getSkills');
+const getUser = require(`${__dirname}/getUser`);
+const getSkills = require(`${__dirname}/getSkills`);
 
 const { promisify } = require('util');
 
@@ -13,9 +13,11 @@ const get = async username => {
   return skills;
 };
 
+const user = process.argv[2];
+
 (async () => {
   try {
-    const skills = await get('Tim');
+    const skills = await get(user);
     console.log(skills);
   } catch (err) {
     console.log(err.message);

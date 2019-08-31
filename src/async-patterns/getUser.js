@@ -1,13 +1,14 @@
 const users = [{ id: 'user1', username: 'Tim' }, { id: 'user2', username: 'Paula' }];
 
 module.exports = (username, cb) => {
+  console.log(`Looking for user: ${username}`);
   setTimeout(() => {
-    const user = users.find(user => user.username === username);
+    const foundUser = users.find(user => user.username === username);
 
-    if (!user) {
+    if (!foundUser) {
       return cb(new Error('User not found'));
     }
 
-    cb(null, user);
+    cb(null, foundUser);
   }, 500);
 };
