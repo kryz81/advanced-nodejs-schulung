@@ -19,5 +19,6 @@ if (cluster.isMaster) {
   });
 } else {
   // it's not the master process -> run a new worker
+  // eslint-disable-next-line global-require
   require(`${__dirname}/server.js`);
 }

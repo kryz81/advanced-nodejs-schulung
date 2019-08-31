@@ -14,7 +14,7 @@ exports.connect = (conn, cb) => {
     connected = true;
     connectionString = conn;
     cb(null, connected);
-  }, 5000);
+  }, 10000);
 };
 
 exports.getUser = (id, cb) => {

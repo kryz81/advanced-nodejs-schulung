@@ -13,6 +13,7 @@ const getUserFromDB = id => {
 const readUser = async id => {
   try {
     const user = await getUserFromDB(id);
+    return user;
   } catch (err) {
     console.log(err.message);
   }

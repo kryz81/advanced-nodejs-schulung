@@ -15,6 +15,7 @@ const router = (req, res) => {
       content = [...jobs];
       break;
     case 'job':
+      // eslint-disable-next-line
       const foundJob = jobs.find(job => job.id === searchParams.get('id'));
       if (foundJob) {
         content = foundJob;

@@ -16,4 +16,6 @@ const getUserFromDB = id => {
 };
 
 // forgot to catch error
-getUserFromDB().then(user => console.log(user));
+getUserFromDB()
+  .then(user => console.log(user))
+  .catch(err => console.log(`Error ${err.message}`));

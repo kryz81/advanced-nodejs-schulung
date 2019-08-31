@@ -1,4 +1,6 @@
-const db = require(__dirname + '/db');
+/* eslint-disable no-unused-vars */
+
+const db = require(`${__dirname}/db`);
 
 // reactor
 // 1. use "callback as the last parameter" convention

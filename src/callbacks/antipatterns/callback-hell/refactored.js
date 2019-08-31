@@ -1,4 +1,6 @@
-const db = require(__dirname + '/db');
+/* eslint-disable no-use-before-define */
+
+const db = require(`${__dirname}/db`);
 
 const verifyHandler = cb => (error, userInfo) => {
   if (error) {

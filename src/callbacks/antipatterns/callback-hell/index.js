@@ -1,4 +1,4 @@
-const db = require(__dirname + '/db');
+const db = require(`${__dirname}/db`);
 
 // function verifies user credentials
 const verifyUser = (cb, username, password) => {

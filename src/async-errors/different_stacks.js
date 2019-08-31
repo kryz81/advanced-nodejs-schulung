@@ -15,6 +15,9 @@ try {
     }
     console.log(user);
   });
-} catch {
+} catch (e) {
   console.log('Cannot read user');
 }
+
+// event handler put to the timers queue
+// the event loop run the handler

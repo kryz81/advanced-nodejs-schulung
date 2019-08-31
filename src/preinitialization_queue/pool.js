@@ -1,9 +1,10 @@
 const db = require(`${__dirname}/db`);
 
 let pendingOps = [];
-const connected = false;
+let connected = false;
 
 const flush = () => {
+  console.log('flush');
   pendingOps.forEach(op => {
     db[op.method].apply(null, op.args);
   });
@@ -11,13 +12,15 @@ const flush = () => {
 };
 
 exports.connect = (conn, cb) => {
+  console.log('connect');
   db.connect(conn, (err, isConnected) => {
     if (err) {
       return cb(err);
     }
 
-    flush();
+    connected = true;
     cb(null, isConnected);
+    flush();
   });
 };
 
