@@ -6,13 +6,13 @@ const verifyUser = (cb, username, password) => {
     if (error) {
       cb(error);
     } else {
-      db.getRoles(userInfo.id, (error, roles) => {
-        if (error) {
+      db.getRoles(userInfo.id, (error2, roles) => {
+        if (error2) {
           cb('Cannot read roles');
         } else {
-          db.logAccess(username, error => {
-            if (error) {
-              cb(error);
+          db.logAccess(username, error3 => {
+            if (error3) {
+              cb(error3);
             } else {
               cb(null, userInfo, roles);
             }
