@@ -5,7 +5,7 @@ const server = createServer((req, res) => {
   console.log('Downloading...');
   readFile('./dummy.csv', 'utf8', (err, data) => {
     if (err) {
-      return res.end(err.message);
+      return res.end(String(err));
     }
     console.log('Sending to the client...');
     return res.end(`${data.length / 1000 / 1000} MB`);

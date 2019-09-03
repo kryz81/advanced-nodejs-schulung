@@ -1,17 +1,22 @@
 const { createServer } = require('http');
-// eslint-disable-next-line
+// eslint-disable-next-line node/no-deprecated-api
 const { parse } = require('url');
 
-const computeImmediate = require('./computeImmediate');
+const compute = n => {
+  if (n > 1) {
+    return compute(n - 1) + compute(n - 2);
+  }
+  return n;
+};
 
 const server = createServer((req, res) => {
   const {
     query: { id },
   } = parse(req.url, true);
 
-  computeImmediate(id, result => {
-    res.end(String(result));
-  });
+  res.writeHead(200);
+  res.write(String(compute(id)));
+  res.end();
 });
 
 // eslint-disable-next-line

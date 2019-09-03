@@ -1877,7 +1877,7 @@ colornames@^1.1.1:
   resolved "https://registry.yarnpkg.com/colornames/-/colornames-1.1.1.tgz#f8889030685c7c4ff9e2a559f5077eb76a816f96"
   integrity sha1-+IiQMGhcfE/54qVZ9Qd+t2qBb5Y=
 
-colors@^1.2.1:
+colors@1.3.3, colors@^1.2.1:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.3.3.tgz#39e005d546afe01e01f9c4ca8fa50f686a01205d"
   integrity sha512-mmGt/1pZqYRjMxB1axhTo16/snVZ5krrKkcmMeVKxzECMMXoCgnvTPp10QgHfcbQZw8Dq2jMNG6je4JlWU0gWg==
@@ -6282,6 +6282,13 @@ stack-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-1.0.2.tgz#33eba3897788558bebfc2db059dc158ec36cebb8"
   integrity sha512-MTX+MeG5U994cazkjd/9KNAapsHnibjMLnfXodlkXw76JEea0UiNzrqidzo1emMwk7w5Qhc9jd4Bn9TBb1MFwA==
 
+starwars-names@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/starwars-names/-/starwars-names-1.6.0.tgz#5f984b5a954714eb383b4d6c19234efea6398335"
+  integrity sha1-X5hLWpVHFOs4O01sGSNO/qY5gzU=
+  dependencies:
+    unique-random-array "1.0.0"
+
 state-toggle@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/state-toggle/-/state-toggle-1.0.2.tgz#75e93a61944116b4959d665c8db2d243631d6ddc"
@@ -6813,6 +6820,18 @@ union-value@^1.0.0:
     get-value "^2.0.6"
     is-extendable "^0.1.1"
     set-value "^2.0.1"
+
+unique-random-array@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/unique-random-array/-/unique-random-array-1.0.0.tgz#42b3721c579388d8b667c93c2dbde3d5d81a9136"
+  integrity sha1-QrNyHFeTiNi2Z8k8Lb3j1dgakTY=
+  dependencies:
+    unique-random "^1.0.0"
+
+unique-random@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/unique-random/-/unique-random-1.0.0.tgz#ce3e224c8242cd33a0e77b0d7180d77e6b62d0c4"
+  integrity sha1-zj4iTIJCzTOg53sNcYDXfmti0MQ=
 
 unique-stream@^2.0.2:
   version "2.3.1"

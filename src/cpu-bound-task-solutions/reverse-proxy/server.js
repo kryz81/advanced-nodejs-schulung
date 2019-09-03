@@ -1,4 +1,5 @@
 const { createServer } = require('http');
+// eslint-disable-next-line
 const { parse } = require('url');
 
 const server = createServer(async (req, res) => {

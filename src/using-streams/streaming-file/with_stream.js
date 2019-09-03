@@ -8,4 +8,4 @@ const server = createServer((req, res) => {
   stream.pipe(res);
 });
 
-server.listen(3000);
+server.listen(3000, () => console.log('Listening...'));
