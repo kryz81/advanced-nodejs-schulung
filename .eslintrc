@@ -12,14 +12,17 @@
     "jest": true,
     "jest/globals": true
   },
-  "globals": {},
+  "globals": {
+    "expect": "readonly"
+  },
   "rules": {
     "prettier/prettier": "error",
     "import/no-dynamic-require": 0,
     "node/no-unpublished-require": 0,
     "no-console": "off",
     "consistent-return": "off",
-    "array-callback-return": "off"
+    "array-callback-return": "off",
+    "node/no-unsupported-features/node-builtins": 0
   },
   "plugins": [
     "prettier",
