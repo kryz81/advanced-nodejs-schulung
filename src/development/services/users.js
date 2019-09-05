@@ -7,6 +7,12 @@ const getUsers = () => model.findUsers();
 
 const getUserById = id => model.findUser(id);
 
+/**
+ * Creates and persists new user
+ *
+ * @param data {object}
+ * @returns {Promise<object>}
+ */
 const createUser = async data => {
   const newUser = await model.create({
     ...data,

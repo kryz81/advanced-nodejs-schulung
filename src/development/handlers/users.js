@@ -1,5 +1,25 @@
 const usersService = require(`${__dirname}/../services/users`);
 
+/**
+ *  @swagger
+ * /users:
+ *   get:
+ *     description: Returns all users
+ *     tags:
+ *       - users
+ *     produces:
+ *       - application/json
+ *     responses:
+ *       200:
+ *         description: users
+ *       500:
+ *        description: internal error
+ *
+ * @param req
+ * @param res
+ * @param next
+ * @returns {Promise<void>}
+ */
 const getUsers = async (req, res, next) => {
   try {
     const users = await usersService.getUsers();
